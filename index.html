@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <div class="screen" id="screen1">
+            <button class="btn app-btn start-btn" onclick = "battle.goToScreen('screen2')">Start</button>
+        </div>
+        <div class = "screen" id = "screen2">
+            <div class = "display">
+                <div  id = "name"></div>
+                <div class = "hit-results" id = "hitResult"></div>
+            </div>
+            <div id="battle-ground"></div>
+            <div class = "action-btn">
+                <button class = "btn" id = "play" onclick = "play()">Play</button>
+                <button class = "btn" id = "align" onclick="changeAlign()">Vertical</button>
+            </div>
+        </div>
+
+        <div class = "screen" id = "screen3">
+            <div class = "result" >
+                    <h1 id="result"></h1>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
